@@ -1,0 +1,99 @@
+<section class="vh-100 bg-image" style=" height:1500px; background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <div class="container">
+    <div class="panel panel-primary" style="height: 300px;">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+      <h2 style="text-align: center;font-family: 'Courier New', Courier, monospace;font-size: 30px;background-color:white;color:black;">COURSE REGISTRATION</h2>
+     
+      <div class="panel-body">
+        <form #loginform="ngForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" #n1="ngModel" class="form-control" id="name"  ngModel name="name" required>
+            <div *ngIf="n1.touched && n1.invalid">
+              <small style="color:red" *ngIf="n1.errors.required" class="error">*NAME IS REQUIRED</small>
+              <small style="color:red" *ngIf="n1.errors.maxlength">* SHOULD BE MAXIMUM 20 CHARACTERS</small>
+             
+          </div>
+           
+          </div>
+          <div class="form-group">
+            <label for="gender">GENDER</label>
+            <select class="select" type="text"  #n2="ngModel" class="form-control" id="gender" ngModel name="gender" required>
+              <option value="0" disabled>Gender</option>
+              <option value="FEMALE">Female</option>
+              <option value="MALE">Male</option>
+              <option value="OTHERS">Other</option>
+              <div *ngIf="n2.touched && n2.invalid">
+                <small style="color:red" *ngIf="n2.errors.required" class="error">*GENDER IS REQUIRED</small>
+                
+            </div>
+            </select>
+
+           
+          </div>
+          <div class="form-group">
+            <label for="emailid">Email ID</label>
+            <input type="email" #n3="ngModel" class="form-control" id="emailid"  ngModel name="emailid" required >
+            <div *ngIf="n3.touched && n3.invalid">
+              <small *ngIf="n3.errors.required" class="error">*EMAIL ID IS REQUIRED</small>
+              
+          </div>
+           
+          </div>
+
+          
+        
+          <div class="form-group">
+            <label for="pwd">PASSWORD</label>
+            <input type="password" #n4="ngModel" class="form-control" id="pwd" ngModel name="pwd" required >
+               <div *ngIf="n4.invalid && n4.touched">
+                       <small style="color:red" *ngIf="pwd.errors.required">*PASSWORD IS REQUIRED</small>
+                       <small style="color:red" *ngIf="pwd.errors.minlength">*PASSWORD SHOULD BE MINIMUM 8 CHARACTERS</small>
+             
+               </div> 
+          </div>
+         
+          <div class="form-group">
+            <label for="pwd1"> REPEAT PASSWORD</label>
+            <input type="password" #n5="ngModel" class="form-control" id="pwd1" ngModel name="pwd1" required>
+               <div *ngIf="n5.invalid && n5.touched">
+                       <small style="color:red" *ngIf="pwd1.errors.required">*PASSWORD IS REQUIRED</small>
+                       <small style="color:red" *ngIf="pwd1.errors.minlength">*PASSWORD SHOULD BE MINIMUM 8 CHARACTERS</small>
+             
+                </div> 
+          </div>
+         
+          <div class="form-group">
+            <label for="course">COURSE</label>
+            <select class="select" type="text" #n6="ngModel" class="form-control" id="course" ngModel name="course" required>
+              <option value="0" disabled>Course</option>
+              <option value="JAVA">JAVA</option>
+              <option value="PYTHON">PYTHON</option>
+              <option value="SPRINGBOOT">SPRINGBOOT</option>
+              <option value="ANGULAR">ANGULAR</option>
+              
+            <div *ngIf="n6.invalid && n6.touched">
+              <small style="color:red" *ngIf="mycourse.errors.required">*COURSE IS REQUIRED</small>
+            </div>
+            </select>
+          </div>
+           
+          <button class="btn btn-primary" type="submit" value="SUBMIT" (click)="store(loginform)">Submit</button>
+          <button class="btn btn-primary" type="reset" value="reset">Reset</button>
+          <div class="alert alert-success" role="alert" *ngIf="flag">
+             {{msg}}
+          </div>
+        </form>
+  
+      </div>
+      <br/>
+    
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    </div>
+  </div>
+  
+</section>

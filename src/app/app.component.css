@@ -1,0 +1,14 @@
+body{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjw6ZK_x1LgxPT7Ei4Pxd6Tiq6V20wTsa6A&usqp=CAU);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color:rgb(27, 13, 2)
+}
+
+input.ng.invalid{
+    border-radius: 5px solid red;
+}
