@@ -1,26 +1,64 @@
+<div class="text-right">
+  
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+    Profile
+  </button>&nbsp;&nbsp;
+  <button class="btn btn-danger"  type="submit" onclick="location.href = 'http://localhost:4200/login/student-login';">Logout</button>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body row">
+        <div class="list-group col-sm">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item">Name</li>
+            <li class="list-group-item list-group-item">EmailId</li>
+            <li class="list-group-item list-group-item">Course</li>
+            <li class="list-group-item list-group-item">Trainer</li>
+           
+          </ul>
+          
+        </div>
 
-<table class="table table-striped table-hover">
-  <thead>
-    <tr>
-      
-      <th scope="col">Name</th>
-      <th scope="col">Course</th>
-      <th scope="col">Trainer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-active">
-      <td>RAVI</td>
-      <td>JAVA</td>
-      <td>JOHN</td>
-    </tr>
-  </tbody>
-</table>
+        <div class="list-group col-sm">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item">RAVI TEJA</li>
+            <li class="list-group-item list-group-item">raviteja@gmail.com</li>
+            <li class="list-group-item list-group-item">Java JEE Abridge</li>
+            <li class="list-group-item list-group-item">IMTIAZ</li>
+           
+          </ul>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="alert alert-success">
   <strong>L1 Exam is on April-18 2022...!</strong>
+  <div><a href="https://www.w3docs.com/quiz/angular" class="alert-link">Exam Link</a></div>
 </div>
+
+<div class="alert alert-primary" role="alert">
+<strong> For M1 exam </strong><a href="https://forms.gle/eqXGvVgJbP7es8xi6" class="alert-link">Click here</a>....
+<strong> For M2 exam </strong><a href="https://forms.gle/V1qybyse5AYKYBDB9" class="alert-link">Click here</a>....
+<strong> For M3 exam </strong><a href="https://forms.gle/QtAY9d42EsiCoyUEA" class="alert-link">Click here</a>....
+</div>
+
+
 
 <div class="row">
   <div class="col-sm-3">
@@ -32,8 +70,8 @@
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   <div class="card-body">
-    <a href="#" class="card-link">PDF</a>
-    <a href="#" class="card-link">PPT</a>
+    <a href="https://www.tutorialspoint.com/java/java_tutorial.pdf" class="card-link">PDF</a>
+    <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.csee.umbc.edu%2Fcourses%2F331%2Fspring03%2F0101%2Flectures%2Fjava01.ppt&wdOrigin=BROWSELINK" class="card-link">PPT</a>
   </div>
 </div>
 </div>
@@ -46,8 +84,8 @@
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   <div class="card-body">
-    <a href="#" class="card-link">edureka</a>
-    <a href="#" class="card-link">code.java</a>
+    <a href="https://www.youtube.com/watch?v=hBh_CC5y8-s&list=PL9ooVrP1hQOEe9EN119lMdwcBxcrBI1D3&ab_channel=edureka%21" class="card-link">edureka</a>
+    <a href="https://www.youtube.com/watch?v=O5hShUO6wxs&list=PLHuIqV4DwPicArdMjI2YI5Hu5c2TnMgvV&ab_channel=javatpoint" class="card-link">java point</a>
   </div>
 </div>
 </div>
@@ -61,7 +99,7 @@
     </div>
     <div class="card-body">
       <a href="https://www.onlinegdb.com/online_java_compiler" class="card-link">Onlinegdb</a>
-      <a href="#" class="card-link">code.java</a>
+      
     </div>
   </div>
   </div>
@@ -74,11 +112,18 @@
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   <div class="card-body">
-    <a href="#" class="card-link">W3</a>
-    <a href="#" class="card-link">Udemy</a>
+    <a href="https://www.w3schools.com/java/default.asp" class="card-link">W3</a>
+   
   </div>
 </div>
 </div>
 
 </div>
+
+
+
+
+
+
+
 <router-outlet></router-outlet>

@@ -13,9 +13,9 @@ export class StudentserviceService {
     return this.http.post(this.baseURL+"savestudent",student,{responseType:"text"});
   }
 
-  updateData(student:any){
-    console.log(student);
-    return this.http.put(this.baseURL+"update",student,{responseType:"text"});
+  updateData(students:any){
+    console.log(students);
+    return this.http.put(this.baseURL+"update",students,{responseType:"text"});
    
   }
 
@@ -23,5 +23,11 @@ export class StudentserviceService {
     console.log(student);
     return this.http.get(this.baseURL+"getallstudents",student);
    
+  }
+  deleteData(id){
+    return this.http.delete(this.baseURL+"delete/"+id);
+  }
+  deleteallData(){
+    return this.http.delete(this.baseURL+"deleteall");
   }
 }

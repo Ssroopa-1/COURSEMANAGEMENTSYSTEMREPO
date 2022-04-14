@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,Validators, FormControl  } from '@angular/forms';
 import { StudentserviceService } from '../studentservice.service';
-import { Student } from './Student';
+import { Student } from '../Student';
 
 @Component({
   selector: 'app-student-register',

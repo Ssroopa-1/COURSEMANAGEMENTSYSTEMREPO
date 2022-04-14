@@ -21,13 +21,13 @@
                       <span class="h1 fw-bold mb-0"> ADMIN LOGIN </span>
                     </div>
   
-                    <h4 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign In</h4>
+    
   
                     <div class="form-outline mb-4">
                       <label>Email address</label>
                       <input type="email"  class="form-control" formControlName="email" placeholder="Enter Email" />
                       
-                      <small style="color:red" *ngIf="email.invalid && email.touched" class="alert alert-danger">Email is required</small>
+                      <small style="color:red" *ngIf="email.invalid && email.touched" class="alert alert-danger">Email is invalid</small>
                     </div>
   
                     <div class="form-outline mb-4">

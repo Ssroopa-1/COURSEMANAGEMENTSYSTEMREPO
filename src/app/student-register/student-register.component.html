@@ -37,7 +37,7 @@
             <label for="emailid">Email ID</label>
             <input type="email" #n3="ngModel" class="form-control" id="emailid"  ngModel name="emailid" required >
             <div *ngIf="n3.touched && n3.invalid">
-              <small *ngIf="n3.errors.required" class="error">*EMAIL ID IS REQUIRED</small>
+              <small  style="color:red" *ngIf="n3.errors.required" class="error">*EMAIL ID IS REQUIRED</small>
               
           </div>
            
@@ -56,7 +56,7 @@
           </div>
          
           <div class="form-group">
-            <label for="pwd1"> REPEAT PASSWORD</label>
+            <label for="pwd1"> CONFIRM PASSWORD</label>
             <input type="password" #n5="ngModel" class="form-control" id="pwd1" ngModel name="pwd1" required>
                <div *ngIf="n5.invalid && n5.touched">
                        <small style="color:red" *ngIf="pwd1.errors.required">*PASSWORD IS REQUIRED</small>
@@ -80,7 +80,7 @@
             </select>
           </div>
            
-          <button class="btn btn-primary" type="submit" value="SUBMIT" (click)="store(loginform)">Submit</button>
+          <button class="btn btn-success" type="submit" value="SUBMIT" (click)="store(loginform)" routerLink="/login/student-login">Submit</button>&nbsp;&nbsp;&nbsp;
           <button class="btn btn-primary" type="reset" value="reset">Reset</button>
           <div class="alert alert-success" role="alert" *ngIf="flag">
              {{msg}}
